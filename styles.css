@@ -1,0 +1,78 @@
+body {
+    scroll-behavior: smooth;
+    padding-top: 90px; /* Creates space below fixed navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0d1117 !important; /* Darker modern tone */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: #e6edf3 !important;  /* Light gray for readability */
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 100px 0; /* Slightly increased spacing */
+}
+
+/* About Section Additional Top Space (Optional Fine-Tuning) */
+#about {
+    padding-top: 40px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+/* Skill Bar */
+.skill-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Project Images */
+.project-card img {
+    height: 180px;
+    object-fit: cover;
+    background-color: #dee2e6;
+}
+
+/* Footer */
+footer {
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
