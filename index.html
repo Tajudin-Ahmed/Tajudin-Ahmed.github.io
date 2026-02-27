@@ -78,16 +78,18 @@
             color: #e6edf3;
         }
 
-        /* Skills */
-        .skill-bar {
-            height: 12px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-        }
+        /* Skill Bar Animation */
+.skill-bar {
+    height: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 0; /* Start empty */
+    transition: width 2s ease-in-out; /* Smooth fill animation */
+}
 
-        .progress-bar {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
-        }
+.progress-bar.animate {
+    /* Width will be set by JS */
+}
 
         /* Projects */
         .project-card {
@@ -278,3 +280,4 @@
 
 </body>
 </html>
+
