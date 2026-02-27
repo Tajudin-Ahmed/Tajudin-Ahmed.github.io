@@ -78,18 +78,16 @@
             color: #e6edf3;
         }
 
-        /* Skill Bar Animation */
-.skill-bar {
-    height: 12px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    width: 0; /* Start empty */
-    transition: width 2s ease-in-out; /* Smooth fill animation */
-}
+        /* Skills */
+        .skill-bar {
+            height: 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-.progress-bar.animate {
-    /* Width will be set by JS */
-}
+        .progress-bar {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+        }
 
         /* Projects */
         .project-card {
@@ -193,32 +191,29 @@
         <h2 class="text-center mb-5">Skills</h2>
         <div class="row">
             <div class="col-md-6 mb-4">
-    <h5>Python (Data Analysis & Machine Learning)</h5>
-    <div class="progress">
-        <div class="progress-bar skill-bar" data-skill="90"></div>
-    </div>
-</div>
-
-<div class="col-md-6 mb-4">
-    <h5>SQL (Data Extraction & Transformation)</h5>
-    <div class="progress">
-        <div class="progress-bar skill-bar" data-skill="85"></div>
-    </div>
-</div>
-
-<div class="col-md-6 mb-4">
-    <h5>Data Visualization (Tableau & Excel)</h5>
-    <div class="progress">
-        <div class="progress-bar skill-bar" data-skill="88"></div>
-    </div>
-</div>
-
-<div class="col-md-6 mb-4">
-    <h5>Machine Learning & Statistical Analysis</h5>
-    <div class="progress">
-        <div class="progress-bar skill-bar" data-skill="75"></div>
-    </div>
-</div>
+                <h5>Python (Data Analysis & Machine Learning)</h5>
+                <div class="progress">
+                    <div class="progress-bar skill-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h5>SQL (Data Extraction & Transformation)</h5>
+                <div class="progress">
+                    <div class="progress-bar skill-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h5>Data Visualization (Tableau & Excel)</h5>
+                <div class="progress">
+                    <div class="progress-bar skill-bar" style="width: 88%"></div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h5>Machine Learning & Statistical Analysis</h5>
+                <div class="progress">
+                    <div class="progress-bar skill-bar" style="width: 75%"></div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -280,32 +275,6 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Animate skill bars when scrolled into view
-function animateSkills() {
-    const skillsSection = document.getElementById('skills');
-    const skillBars = document.querySelectorAll('.skill-bar');
 
-    // Check if skills section is in viewport
-    const sectionPos = skillsSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight / 1.2; // trigger slightly before fully visible
-
-    if (sectionPos < screenPos) {
-        skillBars.forEach(bar => {
-            const skillValue = bar.getAttribute('data-skill');
-            bar.style.width = skillValue + '%';
-        });
-
-        // Remove scroll event after animation to prevent repeated triggers
-        window.removeEventListener('scroll', animateSkills);
-    }
-}
-
-// Trigger animation on scroll
-window.addEventListener('scroll', animateSkills);
-</script>
 </body>
 </html>
-
-
-
