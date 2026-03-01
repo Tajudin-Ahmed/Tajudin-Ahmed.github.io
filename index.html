@@ -2,156 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Data Analyst Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tajudin | Data Analyst Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Body and Background */
         body {
-            scroll-behavior: smooth;
-            padding-top: 90px; /* offset fixed navbar */
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             font-family: 'Poppins', sans-serif;
-            color: #ffffff;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
         }
 
-        /* Navbar Glass Effect */
+        /* Navbar */
         .navbar {
-            background: rgba(15, 15, 15, 0.85);
+            background: rgba(0, 0, 0, 0.8) !important;
             backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
         }
 
-        .navbar-brand {
-            color: #f0f0f0 !important;
-            font-weight: 600;
-        }
-
-        .navbar-nav .nav-link {
-            color: #e6edf3 !important;
+        .navbar a {
+            color: #f8f9fa !important;
             font-weight: 500;
-            margin-left: 15px;
         }
 
-        .navbar-nav .nav-link:hover {
-            color: #ffffff !important;
+        .navbar a:hover {
+            color: #00c6ff !important;
         }
 
-        /* Section Padding */
-        .section-padding {
+        section {
             padding: 100px 0;
         }
 
-        /* Glass Card Panel */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 30px;
+        /* Glass effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(15px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
         }
 
         /* Profile Image */
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border: 4px solid rgba(255,255,255,0.3);
         }
 
-        /* Skills */
-        .skill-bar {
+        /* Skill Bars */
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .progress {
             height: 12px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            width: 0; /* Start empty for animation */
-            transition: width 2s ease-in-out;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
         }
 
         .progress-bar {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            width: 0;
+            transition: width 2s ease;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
         }
 
-        /* Projects */
-        .project-card {
+        /* Cards */
+        .card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
             border: none;
             border-radius: 20px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+            transition: transform 0.3s ease;
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+        .card:hover {
+            transform: translateY(-10px);
         }
 
-        .project-card img {
-            border-radius: 20px 20px 0 0;
-            object-fit: cover;
-            height: 180px;
-            background-color: rgba(255,255,255,0.1);
+        .card img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
 
-        .project-card .card-body {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 0 0 20px 20px;
-        }
-
-        .project-card .btn-primary {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+        .btn-custom {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
             border: none;
+            border-radius: 50px;
+            padding: 8px 20px;
         }
 
-        /* Footer */
+        .btn-custom:hover {
+            opacity: 0.8;
+        }
+
         footer {
-            background: rgba(15,15,15,0.85);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.3);
-            color: #e6edf3;
-            padding: 30px 0;
+            padding: 40px 0;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
         }
 
         footer a {
-            color: #adb5bd;
+            color: #00c6ff;
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
         }
 
         footer a:hover {
-            color: #ffffff;
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Data Analyst Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <a class="navbar-brand text-white fw-bold" href="#">Tajudin</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -161,98 +141,95 @@
     </div>
 </nav>
 
-<!-- About Me -->
-<section id="about" class="section-padding">
-    <div class="container glass-card">
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center mb-4">
-                <!-- Replace "my-photo.jpg" with your actual image in /images folder -->
-                <img src="images/my-photo.jpg" alt="Tajudin Ahmed" class="profile-img">
-            </div>
-            <div class="col-md-8">
-                <h2>About Me</h2>
-                <p>
-                    I am a Data Analyst with over 8 years of experience transforming complex datasets into actionable insights that support evidence-based decision-making. My work focuses on leveraging advanced analytics, structured data systems, and performance benchmarking to strengthen programs in Nutrition, Health Care, and Food Security.
-                </p>
-                <p>
-                    I specialize in SQL and Python for data cleaning, exploratory data analysis (EDA), statistical analysis, and trend modeling. My expertise includes building automated reporting systems and interactive dashboards using Tableau and Excel, enabling decision-makers to monitor KPIs and identify operational gaps in real time.
-                </p>
-                <p>
-                    My analytical approach integrates technical precision with sector-specific knowledge, ensuring insights are statistically sound and operationally relevant.
-                </p>
-            </div>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="glass text-center">
+            <img src="images/my-photo.jpg" alt="Tajudin Ahmed" class="profile-img mb-4">
+            <h2>About Me</h2>
+            <p>
+                I am a Data Analyst with over 8 years of experience specializing in transforming complex datasets into actionable insights for evidence-based decision-making. My expertise spans SQL, Python (data cleaning, exploratory data analysis, statistical modeling), Excel, and Tableau for advanced visualization and dashboard development.
+            </p>
+            <p>
+                I have led analytics initiatives across Nutrition, Health Care, and Food Security sectors, applying performance benchmarking and trend analysis aligned with humanitarian standards. My focus is on strengthening monitoring systems, improving program accountability, and enabling data-driven operational decisions.
+            </p>
         </div>
     </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="section-padding">
-    <div class="container glass-card">
-        <h2 class="text-center mb-5">Skills</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h5>Python (Data Analysis & Machine Learning)</h5>
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <div class="glass">
+            <h2 class="text-center mb-5">Skills</h2>
+
+            <div class="skill">
+                <p>Python</p>
                 <div class="progress">
-                    <div class="progress-bar skill-bar" data-skill="90"></div>
+                    <div class="progress-bar" data-width="95%"></div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <h5>SQL (Data Extraction & Transformation)</h5>
+
+            <div class="skill">
+                <p>SQL</p>
                 <div class="progress">
-                    <div class="progress-bar skill-bar" data-skill="85"></div>
+                    <div class="progress-bar" data-width="90%"></div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <h5>Data Visualization (Tableau & Excel)</h5>
+
+            <div class="skill">
+                <p>Data Visualization (Tableau)</p>
                 <div class="progress">
-                    <div class="progress-bar skill-bar" data-skill="88"></div>
+                    <div class="progress-bar" data-width="92%"></div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <h5>Machine Learning & Statistical Analysis</h5>
+
+            <div class="skill">
+                <p>Machine Learning</p>
                 <div class="progress">
-                    <div class="progress-bar skill-bar" data-skill="75"></div>
+                    <div class="progress-bar" data-width="80%"></div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="section-padding">
+<!-- Projects Section -->
+<section id="projects">
     <div class="container">
         <h2 class="text-center mb-5">Projects</h2>
         <div class="row g-4">
 
             <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="images/project1-screenshot.png" class="card-img-top" alt="Nutrition Analytics Dashboard">
-                    <div class="card-body">
-                        <h5 class="card-title">Nutrition Analytics Dashboard</h5>
-                        <p class="card-text">Built a longitudinal performance dashboard analyzing nutrition indicators, trend forecasting, and KPI benchmarking.</p>
-                        <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View Project</a>
+                <div class="card">
+                    <img src="images/project1.png" alt="Nutrition Dashboard" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nutrition Performance Dashboard</h5>
+                        <p class="card-text">Interactive CMAM performance tracking dashboard with automated KPI benchmarking.</p>
+                        <a href="https://github.com/yourusername/project1" class="btn btn-custom">View Project</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="images/project2-screenshot.png" class="card-img-top" alt="Health Data EDA & Modeling">
-                    <div class="card-body">
-                        <h5 class="card-title">Health Data EDA & Modeling</h5>
-                        <p class="card-text">Applied Python-based EDA and regression modeling to evaluate healthcare performance metrics.</p>
-                        <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View Project</a>
+                <div class="card">
+                    <img src="images/project2.png" alt="Health Data Analysis" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Healthcare Data Analysis</h5>
+                        <p class="card-text">Python-based exploratory and statistical analysis of healthcare datasets.</p>
+                        <a href="https://github.com/yourusername/project2" class="btn btn-custom">View Project</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card project-card">
-                    <img src="images/project3-screenshot.png" class="card-img-top" alt="Food Security SQL Analysis">
-                    <div class="card-body">
-                        <h5 class="card-title">Food Security SQL Analysis</h5>
-                        <p class="card-text">Developed complex SQL queries to analyze food security indicators and automate reporting systems.</p>
-                        <a href="https://github.com/yourusername/project3" class="btn btn-primary" target="_blank">View Project</a>
+                <div class="card">
+                    <img src="images/project3.png" alt="Food Security Model" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Food Security Predictive Model</h5>
+                        <p class="card-text">Machine learning model for forecasting food insecurity trends.</p>
+                        <a href="https://github.com/yourusername/project3" class="btn btn-custom">View Project</a>
                     </div>
                 </div>
             </div>
@@ -261,39 +238,32 @@
     </div>
 </section>
 
-<!-- Contact Footer -->
+<!-- Footer -->
 <footer id="contact">
-    <div class="container text-center">
-        <h5>Contact</h5>
-        <p>Connect with me:</p>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        |
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <p class="mt-3 mb-0">&copy; 2026 Tajudin Ahmed. All Rights Reserved.</p>
-    </div>
+    <p>Connect with me:</p>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <p class="mt-3">&copy; 2026 Tajudin | Data Analytics Portfolio</p>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Skill Bar Animation -->
+<!-- Skill Bar Animation Script -->
 <script>
-function animateSkills() {
-    const skillsSection = document.getElementById('skills');
-    const skillBars = document.querySelectorAll('.skill-bar');
-    const sectionPos = skillsSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight / 1.2;
+    const bars = document.querySelectorAll('.progress-bar');
 
-    if (sectionPos < screenPos) {
-        skillBars.forEach(bar => {
-            const skillValue = bar.getAttribute('data-skill');
-            bar.style.width = skillValue + '%';
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.width = entry.target.getAttribute('data-width');
+            }
         });
-        window.removeEventListener('scroll', animateSkills);
-    }
-}
+    }, { threshold: 0.5 });
 
-window.addEventListener('scroll', animateSkills);
+    bars.forEach(bar => {
+        observer.observe(bar);
+    });
 </script>
 
 </body>
