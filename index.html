@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Core Meta -->
     <meta charset="UTF-8">
-    <title>Tajudin | Data Analyst Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
+    <!-- SEO Meta -->
+    <title>Tajudin | Data Analyst | Python, SQL, Machine Learning</title>
+    <meta name="description" content="Tajudin – Data Analyst with 8+ years of experience in Python, SQL, Machine Learning, and Data Visualization. Specialized in Nutrition, Healthcare, and Food Security analytics.">
+    <meta name="keywords" content="Data Analyst, Python, SQL, Machine Learning, Tableau, Healthcare Analytics, Nutrition Data, Food Security Analytics">
+    <meta name="author" content="Tajudin">
+
+    <!-- Open Graph (LinkedIn Preview Optimization) -->
+    <meta property="og:title" content="Tajudin | Data Analyst Portfolio">
+    <meta property="og:description" content="Transforming complex datasets into actionable insights.">
+    <meta property="og:image" content="images/my-photo.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- AOS (Scroll Animations) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: #0f2027;
             color: #fff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Particles Canvas */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
         }
 
         /* Navbar */
         .navbar {
-            background: rgba(0, 0, 0, 0.8) !important;
+            background: rgba(0, 0, 0, 0.85) !important;
             backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
         }
 
-        .navbar a {
+        .nav-link {
             color: #f8f9fa !important;
             font-weight: 500;
         }
 
-        .navbar a:hover {
+        .nav-link.active {
             color: #00c6ff !important;
+            border-bottom: 2px solid #00c6ff;
         }
 
         section {
-            padding: 100px 0;
+            padding: 120px 0;
         }
 
-        /* Glass effect */
+        /* Glass Card */
         .glass {
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(15px);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         }
 
-        /* Profile Image */
         .profile-img {
             width: 200px;
             height: 200px;
@@ -56,15 +91,10 @@
         }
 
         /* Skill Bars */
-        .skill {
-            margin-bottom: 20px;
-        }
-
         .progress {
             height: 12px;
             background: rgba(255,255,255,0.1);
             border-radius: 20px;
-            overflow: hidden;
         }
 
         .progress-bar {
@@ -77,35 +107,19 @@
         .card {
             background: rgba(255,255,255,0.08);
             backdrop-filter: blur(10px);
-            border: none;
             border-radius: 20px;
+            border: none;
             color: #fff;
             transition: transform 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-
-        .btn-custom {
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
-            border: none;
-            border-radius: 50px;
-            padding: 8px 20px;
-        }
-
-        .btn-custom:hover {
-            opacity: 0.8;
+            transform: translateY(-8px);
         }
 
         footer {
             padding: 40px 0;
-            background: rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.8);
             text-align: center;
         }
 
@@ -114,14 +128,12 @@
             margin: 0 15px;
             text-decoration: none;
         }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
 <body>
+
+<div id="particles-js"></div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -141,98 +153,58 @@
     </div>
 </nav>
 
-<!-- About Section -->
+<!-- About -->
 <section id="about">
     <div class="container">
-        <div class="glass text-center">
+        <div class="glass text-center" data-aos="fade-up">
             <img src="images/my-photo.jpg" alt="Tajudin Ahmed" class="profile-img mb-4">
             <h2>About Me</h2>
             <p>
-                I am a Data Analyst with over 8 years of experience specializing in transforming complex datasets into actionable insights for evidence-based decision-making. My expertise spans SQL, Python (data cleaning, exploratory data analysis, statistical modeling), Excel, and Tableau for advanced visualization and dashboard development.
-            </p>
-            <p>
-                I have led analytics initiatives across Nutrition, Health Care, and Food Security sectors, applying performance benchmarking and trend analysis aligned with humanitarian standards. My focus is on strengthening monitoring systems, improving program accountability, and enabling data-driven operational decisions.
+                Data Analyst with 8+ years of experience transforming complex datasets into actionable insights for evidence-based decision-making across Nutrition, Healthcare, and Food Security programs.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Skills Section -->
+<!-- Skills -->
 <section id="skills">
     <div class="container">
-        <div class="glass">
-            <h2 class="text-center mb-5">Skills</h2>
+        <div class="glass" data-aos="fade-up">
+            <h2 class="text-center mb-4">Technical Skills</h2>
 
-            <div class="skill">
-                <p>Python</p>
-                <div class="progress">
-                    <div class="progress-bar" data-width="95%"></div>
-                </div>
-            </div>
+            <p>Python</p>
+            <div class="progress mb-3"><div class="progress-bar" data-width="95%"></div></div>
 
-            <div class="skill">
-                <p>SQL</p>
-                <div class="progress">
-                    <div class="progress-bar" data-width="90%"></div>
-                </div>
-            </div>
+            <p>SQL</p>
+            <div class="progress mb-3"><div class="progress-bar" data-width="90%"></div></div>
 
-            <div class="skill">
-                <p>Data Visualization (Tableau)</p>
-                <div class="progress">
-                    <div class="progress-bar" data-width="92%"></div>
-                </div>
-            </div>
+            <p>Data Visualization (Tableau)</p>
+            <div class="progress mb-3"><div class="progress-bar" data-width="92%"></div></div>
 
-            <div class="skill">
-                <p>Machine Learning</p>
-                <div class="progress">
-                    <div class="progress-bar" data-width="80%"></div>
-                </div>
-            </div>
-
+            <p>Machine Learning</p>
+            <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
         </div>
     </div>
 </section>
 
-<!-- Projects Section -->
+<!-- Projects -->
 <section id="projects">
     <div class="container">
         <h2 class="text-center mb-5">Projects</h2>
         <div class="row g-4">
 
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/project1.png" alt="Nutrition Dashboard" class="card-img-top">
+                <div class="card" data-aos="zoom-in">
+                    <img src="images/project1.png" class="card-img-top" alt="Nutrition Dashboard">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Nutrition Performance Dashboard</h5>
-                        <p class="card-text">Interactive CMAM performance tracking dashboard with automated KPI benchmarking.</p>
-                        <a href="https://github.com/yourusername/project1" class="btn btn-custom">View Project</a>
+                        <h5>Nutrition Performance Dashboard</h5>
+                        <p>CMAM KPI benchmarking and automated trend analysis.</p>
+                        <a href="https://github.com/yourusername/project1" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/project2.png" alt="Health Data Analysis" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Healthcare Data Analysis</h5>
-                        <p class="card-text">Python-based exploratory and statistical analysis of healthcare datasets.</p>
-                        <a href="https://github.com/yourusername/project2" class="btn btn-custom">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/project3.png" alt="Food Security Model" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Food Security Predictive Model</h5>
-                        <p class="card-text">Machine learning model for forecasting food insecurity trends.</p>
-                        <a href="https://github.com/yourusername/project3" class="btn btn-custom">View Project</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Repeat for other projects -->
 
         </div>
     </div>
@@ -243,26 +215,57 @@
     <p>Connect with me:</p>
     <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
     <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <p class="mt-3">&copy; 2026 Tajudin | Data Analytics Portfolio</p>
+    <p class="mt-3">&copy; 2026 Tajudin</p>
 </footer>
 
-<!-- Bootstrap JS -->
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-<!-- Skill Bar Animation Script -->
 <script>
-    const bars = document.querySelectorAll('.progress-bar');
+    AOS.init({ duration: 1000 });
 
+    // Skill bar animation
+    const bars = document.querySelectorAll('.progress-bar');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.width = entry.target.getAttribute('data-width');
+                entry.target.style.width = entry.target.dataset.width;
             }
         });
     }, { threshold: 0.5 });
+    bars.forEach(bar => observer.observe(bar));
 
-    bars.forEach(bar => {
-        observer.observe(bar);
+    // Active Navbar Highlight
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
+    });
+
+    // Particles
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 60 },
+            size: { value: 3 },
+            move: { speed: 1 },
+            line_linked: { enable: true }
+        }
     });
 </script>
 
