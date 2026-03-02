@@ -22,3 +22,8 @@
     "vite": "^5.0.8"
   }
 }
+"homepage": "https://tajudin-ahmed.github.io",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
