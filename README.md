@@ -1,1 +1,1 @@
-# Tajudin-Ahmed.github.io
+npm create vite@latest Tajudin-Ahmed.github.io -- --template react
