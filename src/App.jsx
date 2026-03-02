@@ -1,23 +1,31 @@
-import { Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Home from "./pages/Home"
-import CaseStudy from "./pages/CaseStudy"
-import Blog from "./pages/Blog"
-import BlogPost from "./pages/BlogPost"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+import AOS from 'aos'
+import './App.css'
+
+// Initialize AOS
+AOS.init()
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project/:slug" element={<CaseStudy />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-      </Routes>
-      <Footer />
-    </>
+    <HelmetProvider>
+      <Router>
+        <div className="app">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
+    </HelmetProvider>
+  )
+}
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to Tajudin's Portfolio</h1>
+      <p>React + Vite + React Router + AOS</p>
+    </div>
   )
 }
 
