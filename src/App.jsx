@@ -1,5 +1,24 @@
+import { Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Home from "./pages/Home"
+import CaseStudy from "./pages/CaseStudy"
+import Blog from "./pages/Blog"
+import BlogPost from "./pages/BlogPost"
+
 function App() {
-  return <h1>Hello, Tajudin Portfolio!</h1>;
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:slug" element={<CaseStudy />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+      </Routes>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
