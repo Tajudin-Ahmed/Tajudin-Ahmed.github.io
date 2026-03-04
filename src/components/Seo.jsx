@@ -22,6 +22,10 @@ export default function Seo({ title, description, image, url }) {
       <meta property="og:url" content={url || defaultUrl} />
       <meta property="og:image" content={image || defaultImage} />
 
+      <meta property="og:image" content="https://tajudin-ahmed.github.io/assets/images/preview.png" />
+      
+      <meta name="twitter:image" content="https://tajudin-ahmed.github.io/assets/images/preview.png" />
+
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title ? `${title} | Tajudin Ahmed` : defaultTitle} />
