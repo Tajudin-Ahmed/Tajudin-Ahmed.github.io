@@ -23,7 +23,6 @@ export default function Seo({ title, description, image, url }) {
       <meta property="og:image" content={image || defaultImage} />
 
       <meta property="og:image" content="https://tajudin-ahmed.github.io/assets/images/preview.png" />
-      
       <meta name="twitter:image" content="https://tajudin-ahmed.github.io/assets/images/preview.png" />
 
       {/* Twitter */}
