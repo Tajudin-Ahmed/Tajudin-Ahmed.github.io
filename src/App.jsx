@@ -1,32 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
-import AOS from 'aos'
-import './App.css'
+import React, { Suspense, lazy } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-// Initialize AOS
-AOS.init()
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <div className="app">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
-      </Router>
-    </HelmetProvider>
-  )
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+
+        {/* Catch-all redirect to home (prevents broken routes on refresh) */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Suspense>
+  );
 }
 
-function Home() {
-  return (
-    <div>
-      <h1>Welcome to Tajudin's Portfolio</h1>
-      <p>React + Vite + React Router + AOS</p>
-    </div>
-  )
-}
-
-export default App
+export default App;
