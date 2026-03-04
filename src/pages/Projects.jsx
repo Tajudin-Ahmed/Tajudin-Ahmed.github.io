@@ -1,15 +1,16 @@
-import React from "react";
-import Seo from "../components/Seo";
+import projects from "../data/projects";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div>
-      <Seo
-        title="Projects"
-        description="Explore Tajudin Ahmed's data analytics projects including dashboards, forecasting models, and CMAM analysis."
-      />
-      <h1>Projects</h1>
-      <p>All my detailed projects and case studies are listed here.</p>
-    </div>
+    <section className="container">
+      <h1>Analytics Projects</h1>
+
+      <div className="grid">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
   );
 }
