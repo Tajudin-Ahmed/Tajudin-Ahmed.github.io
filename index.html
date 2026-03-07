@@ -1,177 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tajudin Ahmed | Data Analyst Portfolio</title>
-    <meta
-      name="description"
-      content="Tajudin Ahmed — Data Analyst with 8+ years of experience in Python, SQL, machine learning, and dashboarding for nutrition, healthcare, and food security programs."
-    />
-    <meta
-      name="keywords"
-      content="Data Analyst, Python, SQL, Machine Learning, Healthcare Analytics, Nutrition Analytics, Food Security"
-    />
-    <meta name="author" content="Tajudin Ahmed" />
-    <meta name="theme-color" content="#0b1020" />
+<head>
+    <!-- Core Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tajudin Ahmed | Data Analyst | Python, SQL, Machine Learning</title>
+    <meta name="description" content="Tajudin Ahmed – Data Analyst with 8+ years of experience in Python, SQL, Machine Learning, and Data Visualization. Specialized in Nutrition, Healthcare, and Food Security analytics.">
+    <meta name="keywords" content="Data Analyst, Python, SQL, Machine Learning, Tableau, Healthcare Analytics, Nutrition Data, Food Security Analytics">
+    <meta name="author" content="Tajudin Ahmed">
+    <meta name="theme-color" content="#0b132b">
 
-    <meta property="og:title" content="Tajudin Ahmed | Data Analyst Portfolio" />
-    <meta
-      property="og:description"
-      content="Turning complex program data into clear, decision-ready insight."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/my-photo.jpg" />
-    <meta property="og:url" content="https://Tajudin-Ahmed.github.io/tajudin-portfolio/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tajudin Ahmed | Data Analyst Portfolio">
+    <meta property="og:description" content="Transforming complex datasets into actionable insights.">
+    <meta property="og:image" content="images/my-photo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Tajudin-Ahmed.github.io/tajudin-portfolio/">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tajudin Ahmed | Data Analyst Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Portfolio featuring analytics projects in nutrition, healthcare, and food security."
-    />
-    <meta name="twitter:image" content="images/my-photo.jpg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tajudin Ahmed | Data Analyst Portfolio">
+    <meta name="twitter:description" content="Data analytics projects and case studies in nutrition, healthcare, and food security.">
+    <meta name="twitter:image" content="images/my-photo.jpg">
 
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tajudin Ahmed",
+      "jobTitle": "Data Analyst",
+      "description": "Data Analyst with 8+ years of experience in Python, SQL, Machine Learning, and Data Visualization specializing in Nutrition, Healthcare, and Food Security analytics.",
+      "url": "https://Tajudin-Ahmed.github.io/tajudin-portfolio/",
+      "image": "https://Tajudin-Ahmed.github.io/tajudin-portfolio/images/my-photo.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/tajudin-ahmed-a63002144",
+        "https://github.com/Tajudin-Ahmed"
+      ],
+      "knowsAbout": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Data Visualization",
+        "Healthcare Analytics",
+        "Food Security Analytics",
+        "Monitoring and Evaluation"
+      ]
+    }
+    </script>
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Tajudin Ahmed",
-        "jobTitle": "Data Analyst",
-        "description": "Data Analyst with 8+ years of experience in Python, SQL, machine learning, and data visualization.",
-        "url": "https://Tajudin-Ahmed.github.io/tajudin-portfolio/",
-        "image": "https://Tajudin-Ahmed.github.io/tajudin-portfolio/images/my-photo.jpg",
-        "sameAs": [
-          "https://linkedin.com/in/tajudin-ahmed-a63002144",
-          "https://github.com/Tajudin-Ahmed"
-        ],
-        "knowsAbout": [
-          "Python",
-          "SQL",
-          "Machine Learning",
-          "Data Visualization",
-          "Healthcare Analytics",
-          "Food Security Analytics",
-          "Monitoring and Evaluation"
-        ]
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Tajudin Analytics Insights",
+      "url": "https://Tajudin-Ahmed.github.io/tajudin-portfolio/blog",
+      "description": "Thought leadership on data analytics, monitoring systems, and humanitarian performance measurement."
+    }
     </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+</head>
 
-    <header class="site-header">
-      <nav class="nav container" aria-label="Primary">
-        <a class="brand" href="#home">Tajudin Ahmed</a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul id="menu" class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+<body>
+<a class="skip-link" href="#about">Skip to main content</a>
+
+<header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary">
+        <a class="navbar-brand" href="#top">Tajudin Ahmed</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main id="main">
-      <section id="home" class="hero container section">
-        <div class="hero-copy">
-          <p class="eyebrow">Data Analyst • Python • SQL • BI</p>
-          <h1>Building analytics systems that drive better program decisions.</h1>
-          <p class="lead">
-            I help nutrition, healthcare, and humanitarian teams turn fragmented data into actionable
-            insight through clean pipelines, reliable dashboards, and practical machine learning.
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </div>
-        <img
-          class="hero-photo"
-          src="images/my-photo.jpg"
-          alt="Portrait of Tajudin Ahmed"
-          loading="eager"
-          width="260"
-          height="260"
-        />
-      </section>
+<main>
+    <section id="about" class="section container">
+        <article class="glass text-center reveal">
+            <img src="images/my-photo.jpg" alt="Portrait of Tajudin Ahmed" class="profile-img" loading="eager" width="200" height="200">
+            <p class="eyebrow">Data Analyst • Monitoring & Evaluation</p>
+            <h1>Turning program data into action-ready decisions</h1>
+            <p>
+                Data Analyst with 8+ years of experience transforming complex datasets into actionable insights for evidence-based decision-making across Nutrition, Healthcare, and Food Security programs.
+            </p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="https://github.com/Tajudin-Ahmed" class="btn btn-outline" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </article>
+    </section>
 
-      <section id="about" class="container section card">
-        <h2>About</h2>
-        <p>
-          With over 8 years in data analytics and monitoring & evaluation, I specialize in designing
-          KPI frameworks, automating reporting workflows, and translating evidence into strategy for
-          multisector programs.
-        </p>
-      </section>
+    <section id="skills" class="section container">
+        <article class="glass reveal">
+            <h2 class="section-title">Technical Skills</h2>
 
-      <section id="skills" class="container section">
-        <h2>Core Skills</h2>
-        <div class="skill-grid">
-          <article class="skill card">
-            <h3>Analytics Engineering</h3>
-            <p>Python, SQL, ETL pipelines, validation checks, and reproducible analytics workflows.</p>
-          </article>
-          <article class="skill card">
-            <h3>Business Intelligence</h3>
-            <p>Interactive dashboards, KPI storytelling, and program performance monitoring.</p>
-          </article>
-          <article class="skill card">
-            <h3>Applied ML</h3>
-            <p>Forecasting, segmentation, anomaly detection, and model evaluation for operations.</p>
-          </article>
-        </div>
-      </section>
+            <div class="skill-row">
+                <div class="skill-label"><span>Python</span><span>95%</span></div>
+                <div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+            </div>
 
-      <section id="projects" class="container section">
-        <h2>Featured Projects</h2>
+            <div class="skill-row">
+                <div class="skill-label"><span>SQL</span><span>90%</span></div>
+                <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-label"><span>Data Visualization (Tableau)</span><span>92%</span></div>
+                <div class="progress"><div class="progress-bar" data-width="92%"></div></div>
+            </div>
+
+            <div class="skill-row">
+                <div class="skill-label"><span>Machine Learning</span><span>80%</span></div>
+                <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+            </div>
+        </article>
+    </section>
+
+    <section id="projects" class="section container">
+        <h2 class="section-title text-center">Featured Projects</h2>
         <div class="project-grid">
-          <article class="project card">
-            <h3>Nutrition Performance Dashboard</h3>
-            <p>Automated CMAM KPI benchmarking and trend detection to improve response quality.</p>
-            <a href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">View on GitHub →</a>
-          </article>
-          <article class="project card">
-            <h3>Healthcare Data Quality Monitor</h3>
-            <p>Validation framework to flag data completeness and consistency issues in reporting cycles.</p>
-            <a href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">View on GitHub →</a>
-          </article>
-          <article class="project card">
-            <h3>Food Security Forecasting</h3>
-            <p>Scenario-driven model to project caseload fluctuations and improve planning readiness.</p>
-            <a href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">View on GitHub →</a>
-          </article>
+            <article class="card reveal">
+                <div class="card-body">
+                    <h3>Nutrition Performance Dashboard</h3>
+                    <p>CMAM KPI benchmarking and automated trend analysis.</p>
+                    <a href="https://github.com/Tajudin-Ahmed/project1" class="btn btn-outline" target="_blank" rel="noreferrer">View Project</a>
+                </div>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-body">
+                    <h3>Healthcare Monitoring Insights</h3>
+                    <p>Unified reporting and performance views for service quality tracking.</p>
+                    <a href="https://github.com/Tajudin-Ahmed" class="btn btn-outline" target="_blank" rel="noreferrer">View Project</a>
+                </div>
+            </article>
+
+            <article class="card reveal">
+                <div class="card-body">
+                    <h3>Food Security Forecasting</h3>
+                    <p>Forecasting models to support planning under changing humanitarian contexts.</p>
+                    <a href="https://github.com/Tajudin-Ahmed" class="btn btn-outline" target="_blank" rel="noreferrer">View Project</a>
+                </div>
+            </article>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer id="contact" class="site-footer">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Open to collaborations in analytics, M&E systems, and dashboard strategy.</p>
+<footer id="contact" class="site-footer">
+    <div class="container">
+        <p>Connect with me:</p>
         <p>
-          <a href="https://linkedin.com/in/tajudin-ahmed-a63002144" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span aria-hidden="true">•</span>
-          <a href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/tajudin-ahmed-a63002144" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span aria-hidden="true">•</span>
+            <a href="https://github.com/Tajudin-Ahmed" target="_blank" rel="noreferrer">GitHub</a>
         </p>
-        <p>© <span id="year"></span> Tajudin Ahmed</p>
-      </div>
-    </footer>
+        <p class="copyright">&copy; <span id="year"></span> Tajudin Ahmed</p>
+    </div>
+</footer>
 
-    <script>
-      const navToggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector(".nav-links");
-      navToggle.addEventListener("click", () => {
-        const expanded = navToggle.getAttribute("aria-expanded") === "true";
-        navToggle.setAttribute("aria-expanded", String(!expanded));
-        navLinks.classList.toggle("open");
-      });
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
 
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        navMenu.classList.toggle('open');
+    });
+
+    const sections = [...document.querySelectorAll('main section')];
+    const navLinks = [...document.querySelectorAll('.nav-link')];
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const current = `#${entry.target.id}`;
+                navLinks.forEach((link) => {
+                    link.classList.toggle('active', link.getAttribute('href') === current);
+                });
+            }
+        });
+    }, { threshold: 0.55 });
+
+    sections.forEach((section) => sectionObserver.observe(section));
+
+    const progressBars = document.querySelectorAll('.progress-bar');
+    const progressObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.width = entry.target.dataset.width;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    progressBars.forEach((bar) => progressObserver.observe(bar));
+
+    const revealItems = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
 </html>
