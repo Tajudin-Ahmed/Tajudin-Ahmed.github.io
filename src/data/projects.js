@@ -1,7 +1,7 @@
 @@ -23,51 +23,51 @@ const projects = [
     tools: ["Python", "Pandas", "Scikit-Learn"],
     image: "/images/food-security.png",
-    github: "https://github.com/yourusername/food-risk-model",
+    github: "https://github.com/Tajudin-Ahmed/food-risk-model",
     problem:
       "Delayed identification of deteriorating food security conditions.",
     methodology:
@@ -17,7 +17,7 @@
       "Automated SQL reporting engine for hospital performance monitoring.",
     tools: ["SQL", "Power BI"],
     image: "/images/health-kpi.png",
-    github: "https://github.com/yourusername/health-kpi",
+    github: "https://github.com/Tajudin-Ahmed/health-kpi",
     problem:
       "Manual reporting processes caused delays in decision-making.",
     methodology:
@@ -33,7 +33,7 @@
       "Automated tracking of commodity losses and spoilage patterns across distribution hubs.",
     tools: ["Python", "SQL", "Power BI", "Excel"],
     image: "/images/supply-chain-loss.png",
-    github: "https://github.com/yourusername/supply-chain-loss-monitoring",
+    github: "https://github.com/Tajudin-Ahmed/supply-chain-loss-monitoring",
     problem:
       "Program teams lacked timely visibility into post-distribution losses and high-risk locations.",
     methodology:
@@ -49,4 +49,4 @@
       "Geo-analytics workflow to detect and prioritize high-risk malnutrition clusters.",
     tools: ["Python", "GeoPandas", "QGIS", "Tableau"],
     image: "/images/malnutrition-hotspots.png",
-    github: "https://github.com/yourusername/malnutrition-hotspot-mapping",
+    github: "https://github.com/Tajudin-Ahmed/malnutrition-hotspot-mapping",
