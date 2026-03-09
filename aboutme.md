@@ -37,4 +37,4 @@ Feel free to connect and say hi! <br><br>
 
 
 
-<img src="images/aboutme.png?raw=true"/>
+<img src="images/aboutme.jpg?raw=true"/>
