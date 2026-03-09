@@ -45,7 +45,7 @@ const projects = [
       "SQL stored procedures + Power BI dashboard layer.",
     results:
       "Reduced reporting cycle from 5 days to 1 day.",
-  }
+  },
 
   {
     id: "supply-chain-loss-monitoring",
