@@ -140,14 +140,23 @@ h2 {
   max-width: 62ch;
 }
 
-.hero-photo {
+.hero-photo-frame {
   justify-self: center;
-  border-radius: 1rem;
   width: clamp(180px, 38vw, 260px);
   aspect-ratio: 1;
-  object-fit: cover;
+  padding: 0.35rem;
+  border-radius: 1.75rem;
+  overflow: hidden;
   border: 1px solid var(--border);
+  background: linear-gradient(160deg, rgba(16, 24, 43, 0.95), rgba(60, 179, 255, 0.18));
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.38);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  object-fit: cover;
 }
 
 .actions {
